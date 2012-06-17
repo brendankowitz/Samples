@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" connectionString="Data Source=.\sqlexpress;Initial Catalog=sampleapp;Integrated Security=True" name="" defaultIdentityGenerator="IdentityColumn" cascadeSaves="true" migrationProjectName="SampleAppMigrations\SampleAppMigrations.csproj" xmlns="http://namespaces.mindscape.co.nz/nhmodel">
+  <entities>
+    <entity name="Forum" saveOptions="UpdateChangedColumnsOnly">
+      <entityProperties>
+        <entityProperty name="Name" />
+      </entityProperties>
+      <identityProperties>
+        <identityProperty name="Id" />
+      </identityProperties>
+      <oneToManyAssociations>
+        <oneToManyAssociation Id="f26b89ee-4957-426a-968d-f1a11fffc7d6" collectionName="Tasks" keyColumnName="ForumId" backreferenceName="Forum" cascadeSaves="SaveUpdate">
+          <entityMoniker name="//Tasks" />
+        </oneToManyAssociation>
+      </oneToManyAssociations>
+    </entity>
+    <entity name="Tasks">
+      <entityProperties>
+        <entityProperty name="Name" />
+      </entityProperties>
+      <identityProperties>
+        <identityProperty name="Id" />
+      </identityProperties>
+    </entity>
+  </entities>
+  <policies>
+    <codeGenerationPolicy Id="cfd91077-2e42-4c00-9b6a-add8fc4bae3a" layout="FilePerType" mappingRepresentation="FluentNHibernate" />
+    <defaultIdentityTypePolicy Id="06e94be4-8378-4c55-a6f0-575e852713ea" />
+  </policies>
+</model>

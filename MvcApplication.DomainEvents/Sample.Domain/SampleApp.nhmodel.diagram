@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<nHibernateModelDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SampleApp">
+  <modelMoniker name="/" />
+  <nestedChildShapes>
+    <entityShape Id="4901d04b-bc11-4d51-a9f1-675aeeb1526c" absoluteBounds="2.25, 0.75, 1.5, 1.3033821614583334">
+      <entityMoniker name="//Forum" />
+      <nestedChildShapes>
+        <elementListCompartment Id="654607fa-6724-40fa-8edb-844212685607" absoluteBounds="2.265, 1.06, 1.4700000000000002, 0.44169108072916657" name="Identity" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e6b2d0bd-9eaa-4c10-8557-5adee2c93b09" absoluteBounds="2.265, 1.5116910807291664, 1.4700000000000002, 0.44169108072916663" name="Properties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <entityShape Id="8fde216d-24d5-4b45-a37f-1356f65c00c9" absoluteBounds="5.5, 0.875, 1.5, 1.3033821614583334">
+      <entityMoniker name="//Tasks" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe222db4-086b-4298-bcab-e96ccd4c6930" absoluteBounds="5.515, 1.185, 1.4700000000000002, 0.44169108072916657" name="Identity" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="84e4793d-dcbb-4973-b5e7-f6c96928a319" absoluteBounds="5.515, 1.6366910807291664, 1.4700000000000002, 0.44169108072916663" name="Properties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+    <oneToManyAssociationConnector Id="5cf8093d-0063-4ccd-a37d-482cfd1c27ef" edgePoints="[(3.75 : 1.46419108072917); (5.5 : 1.46419108072917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <oneToManyAssociationMoniker Id="f26b89ee-4957-426a-968d-f1a11fffc7d6" />
+      <relativeChildShapes />
+      <nodes>
+        <entityShapeMoniker Id="4901d04b-bc11-4d51-a9f1-675aeeb1526c" />
+        <entityShapeMoniker Id="8fde216d-24d5-4b45-a37f-1356f65c00c9" />
+      </nodes>
+    </oneToManyAssociationConnector>
+  </nestedChildShapes>
+</nHibernateModelDiagram>
